@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Latitude vs. Wind Speed</title>
+    <title>Latitude Comparison</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-info">
         <div class="container">
-            <a class="navbar-brand text-white" href="Landing_Page.html">Latitude</a>
+            <a class="navbar-brand text-white" href="index.html">Latitude</a>
             <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,53 +46,39 @@
         </div>
     </nav>
     <br>
-    <div class="container">
 
-        <section class="row">
-            <div class="col-md-8">
-                <article class="contained-style">
-                    <h1>Latitude vs Wind Speed</h1>
-                    <a href="visualizations/wind_speed.png"><img src="visualizations/wind_speed.png"
-                            alt="Latitude vs. Wind Speed" class="chart"></a>
-                    <p>The chart shows cities' latitude against wind speed. There look to be a very small correlation
-                        between latitude and wind speed.</p>
-                </article>
+    <div class="container content bg-white">
+        <h1>Comparison: Latitude vs X</h1>
+        <hr>
+        <p>Click any plot to get indept analysis</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">vs. Max Teperature</h2>
+                <a href="visualizations/max_temp.png"><img src="visualizations/max_temp.png"
+                        alt="Latitude vs Temperature" class="chart"></a>
             </div>
-
-
-            <div class="col-md-4">
-                <article class="contained-style">
-                    <h2>Visualizations</h2>
-                    <p>Click on the image to see more:</p>
-
-                    <div class="row">
-                        <div class="col-md-6 img-column">
-                            <a href="max_temp.html"><img src="visualizations/max_temp.png"
-                                    alt="Image of Latitude vs Max Temperature Chart" class="img-button"></a>
-                        </div>
-
-                        <div class="col-md-6 img-column">
-                            <a href="humidity.html"><img src="visualizations/humidity.png"
-                                    alt="Image of Latitude vs Humidity Chart" class="img-button"></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 img-column">
-
-                            <a href="cloudiness.html"><img src="visualizations/cloudiness.png"
-                                    alt="Image of Latitude vs Cloudiness Chart" class="img-button"></a>
-                        </div>
-
-                        <div class="col-md-6 img-column">
-                            <a href="wind_speed.html"><img src="visualizations/wind_speed.png"
-                                    alt="Image of Latitude vs Wind Speed Chart" class="img-button"></a>
-                        </div>
-                    </div>
-
-
-                </article>
+            <div class="col-md-6">
+                <h2 class="text-center">vs. Humidity</h2>
+                <a href="visualizations/humidity.png"><img src="visualizations/humidity.png"
+                        alt="Latitude vs Humidity" class="chart"></a>
             </div>
-        </section>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">vs. Cloudiness </h2>
+                <a href="cloudiness.html"><img src="cloudiness.html"
+                        alt="Latitude vs Cloudiness" class="chart"></a>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">vs. Wind Speed</h2>
+                <a href="visualizations/wind_speed.png"><img src="visualizations/wind_speed.png"
+                        alt="Latitude vs Wind Speed" class="chart"></a>
+            </div>
+        </div>
+    </div>
+    <br>
+
 
     </div>
 
